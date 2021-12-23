@@ -67,7 +67,7 @@ def send_mail(data):    # data must be a list of touple
 
 
 def data_to_html(tuple):
-    return pd.DataFrame(tuple, columns=('Company', 'Shares number', 'Total amount', 'Investor', 'Date', 'Action'))
+    return pd.DataFrame(tuple[1:], columns=tuple[0])
 
 
 def get_receivers_address():

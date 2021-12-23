@@ -1,0 +1,4 @@
+log/*
+receivers.txt
+venv
+companies.csv

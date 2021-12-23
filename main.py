@@ -31,4 +31,3 @@ if __name__ == '__main__':
         schedule.run_pending()
         time.sleep(60)  # wait one minute
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
