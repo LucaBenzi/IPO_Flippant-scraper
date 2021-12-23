@@ -6278,3 +6278,805 @@ Traceback (most recent call last):
   File "C:\Users\benz1\PycharmProjects\IPO_Flippant\mail.py", line 39, in send_mail
     message = create_message(sender_email, receiver_email)
 TypeError: create_message() missing 1 required positional argument: 'data'
+23-12-2021 10:03:08.083 INFO main_test - <module>: -----------------PGM-STARTED---------------------
+23-12-2021 10:03:09.714 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 431.400000 %.
+23-12-2021 10:03:09.715 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.716 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 266.300000 %.
+23-12-2021 10:03:09.717 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.721 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 185.700000 %.
+23-12-2021 10:03:09.723 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.725 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 288.500000 %.
+23-12-2021 10:03:09.725 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.727 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 269.500000 %.
+23-12-2021 10:03:09.727 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.729 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 290.100000 %.
+23-12-2021 10:03:09.730 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 262.300000 %.
+23-12-2021 10:03:09.732 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.733 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.733 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.734 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.735 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.737 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.738 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.751 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 261.500000 %.
+23-12-2021 10:03:09.753 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 266.600000 %.
+23-12-2021 10:03:09.754 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.754 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.755 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 269.900000 %.
+23-12-2021 10:03:09.756 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.757 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.758 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 145.700000 %.
+23-12-2021 10:03:09.761 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.763 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 149.700000 %.
+23-12-2021 10:03:09.763 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.764 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 136.400000 %.
+23-12-2021 10:03:09.766 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 211.800000 %.
+23-12-2021 10:03:09.767 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 297.100000 %.
+23-12-2021 10:03:09.769 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 242.800000 %.
+23-12-2021 10:03:09.770 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.770 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:09.771 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 151.300000 %.
+23-12-2021 10:03:10.065 INFO scraper - get_data: Found new company ('Altus Power Inc - Class A', '$10.75', '$10.25', 'Jeffrey Ubben', 'New holding')
+23-12-2021 10:03:10.655 INFO scraper - get_data: Found new company ('Hagerty Inc - Class A', '-', '$15.44', 'Tom Gayner', 'New holding')
+23-12-2021 10:03:11.721 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 381.750000 %.
+23-12-2021 10:03:11.721 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.722 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 279.700000 %.
+23-12-2021 10:03:11.722 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.723 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 220.900000 %.
+23-12-2021 10:03:11.723 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.724 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 324.700000 %.
+23-12-2021 10:03:11.724 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.725 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 280.050000 %.
+23-12-2021 10:03:11.726 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.727 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 264.350000 %.
+23-12-2021 10:03:11.729 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 242.800000 %.
+23-12-2021 10:03:11.729 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.729 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.729 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.729 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.729 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.729 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.729 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.730 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 256.450000 %.
+23-12-2021 10:03:11.731 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 250.750000 %.
+23-12-2021 10:03:11.731 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.731 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.732 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 276.150000 %.
+23-12-2021 10:03:11.732 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.732 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.733 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 331.350000 %.
+23-12-2021 10:03:11.733 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.733 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 311.100000 %.
+23-12-2021 10:03:11.733 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.734 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 189.600000 %.
+23-12-2021 10:03:11.735 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 190.700000 %.
+23-12-2021 10:03:11.735 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 249.200000 %.
+23-12-2021 10:03:11.736 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 213.550000 %.
+23-12-2021 10:03:11.736 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.736 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.737 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 191.700000 %.
+23-12-2021 10:03:11.904 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 289.050000 %.
+23-12-2021 10:03:11.904 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.905 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 272.950000 %.
+23-12-2021 10:03:11.905 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.906 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 245.400000 %.
+23-12-2021 10:03:11.906 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.907 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 295.400000 %.
+23-12-2021 10:03:11.907 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.907 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 273.450000 %.
+23-12-2021 10:03:11.908 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.908 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 251.350000 %.
+23-12-2021 10:03:11.909 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 270.750000 %.
+23-12-2021 10:03:11.909 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.909 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.909 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.909 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.909 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.910 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.910 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.910 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 328.550000 %.
+23-12-2021 10:03:11.911 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 355.000000 %.
+23-12-2021 10:03:11.911 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.911 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.911 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 333.050000 %.
+23-12-2021 10:03:11.912 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.912 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.912 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 317.200000 %.
+23-12-2021 10:03:11.912 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.913 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 294.950000 %.
+23-12-2021 10:03:11.913 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.914 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 258.550000 %.
+23-12-2021 10:03:11.915 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 224.400000 %.
+23-12-2021 10:03:11.916 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 301.600000 %.
+23-12-2021 10:03:11.916 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 217.950000 %.
+23-12-2021 10:03:11.916 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.916 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:11.918 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 211.500000 %.
+23-12-2021 10:03:12.073 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 461.400000 %.
+23-12-2021 10:03:12.073 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.074 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 330.600000 %.
+23-12-2021 10:03:12.074 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.075 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 295.500000 %.
+23-12-2021 10:03:12.075 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.075 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 342.800000 %.
+23-12-2021 10:03:12.075 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.076 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 330.400000 %.
+23-12-2021 10:03:12.076 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.077 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 303.700000 %.
+23-12-2021 10:03:12.077 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 319.000000 %.
+23-12-2021 10:03:12.077 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.077 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.077 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.077 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.078 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.078 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.078 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.079 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 291.200000 %.
+23-12-2021 10:03:12.079 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 322.800000 %.
+23-12-2021 10:03:12.080 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.080 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.080 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 291.800000 %.
+23-12-2021 10:03:12.080 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.080 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.081 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 340.600000 %.
+23-12-2021 10:03:12.081 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.082 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 423.000000 %.
+23-12-2021 10:03:12.082 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.083 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 345.200000 %.
+23-12-2021 10:03:12.084 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 339.900000 %.
+23-12-2021 10:03:12.084 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 298.700000 %.
+23-12-2021 10:03:12.085 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 276.300000 %.
+23-12-2021 10:03:12.085 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.085 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:12.085 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 257.900000 %.
+23-12-2021 10:03:12.646 INFO scraper - get_data: Found new company ('Weave Communications Inc', '$21.13', '$14.67', 'Tiger Global', 'New holding')
+23-12-2021 10:03:13.080 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 325.950000 %.
+23-12-2021 10:03:13.080 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.081 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 311.050000 %.
+23-12-2021 10:03:13.081 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.082 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 290.250000 %.
+23-12-2021 10:03:13.082 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.082 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 378.500000 %.
+23-12-2021 10:03:13.082 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.083 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 313.950000 %.
+23-12-2021 10:03:13.083 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.084 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 296.100000 %.
+23-12-2021 10:03:13.084 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 282.300000 %.
+23-12-2021 10:03:13.085 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.085 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.085 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.085 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.085 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.085 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.085 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.086 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 315.350000 %.
+23-12-2021 10:03:13.086 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 334.250000 %.
+23-12-2021 10:03:13.086 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.086 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.087 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 332.050000 %.
+23-12-2021 10:03:13.087 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.087 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.088 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 390.200000 %.
+23-12-2021 10:03:13.088 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.089 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 356.450000 %.
+23-12-2021 10:03:13.089 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.089 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 288.700000 %.
+23-12-2021 10:03:13.090 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 324.800000 %.
+23-12-2021 10:03:13.091 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 359.250000 %.
+23-12-2021 10:03:13.091 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 296.800000 %.
+23-12-2021 10:03:13.091 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.091 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.092 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 261.850000 %.
+23-12-2021 10:03:13.316 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 356.050000 %.
+23-12-2021 10:03:13.316 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.317 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 264.450000 %.
+23-12-2021 10:03:13.318 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.318 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 222.400000 %.
+23-12-2021 10:03:13.318 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.319 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 270.850000 %.
+23-12-2021 10:03:13.320 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.320 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 252.950000 %.
+23-12-2021 10:03:13.320 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.321 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 227.700000 %.
+23-12-2021 10:03:13.322 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 205.700000 %.
+23-12-2021 10:03:13.322 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.322 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.322 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.322 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.322 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.322 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.322 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.323 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 281.700000 %.
+23-12-2021 10:03:13.324 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 276.000000 %.
+23-12-2021 10:03:13.324 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.324 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.324 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 202.900000 %.
+23-12-2021 10:03:13.324 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.324 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.325 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 256.250000 %.
+23-12-2021 10:03:13.325 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.326 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 273.950000 %.
+23-12-2021 10:03:13.326 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.327 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 204.150000 %.
+23-12-2021 10:03:13.327 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 209.700000 %.
+23-12-2021 10:03:13.328 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 307.300000 %.
+23-12-2021 10:03:13.329 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 213.550000 %.
+23-12-2021 10:03:13.329 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.329 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:13.330 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 184.300000 %.
+23-12-2021 10:03:13.339 INFO mail - check_new_companies: old companies: 
+                Company Name Investor Price  ...       Investor       Action
+0  Altus Power Inc - Class A         $11.75  ...  Jeffrey Ubben  New holding
+1      Hagerty Inc - Class A              -  ...     Tom Gayner  New holding
+2   Weave Communications Inc         $21.13  ...   Tiger Global  New holding
+
+[3 rows x 5 columns]
+23-12-2021 10:03:13.343 INFO mail - check_new_companies: new companies: 
+                Company Name Investor Price  ...       Investor       Action
+0  Altus Power Inc - Class A         $10.75  ...  Jeffrey Ubben  New holding
+1      Hagerty Inc - Class A              -  ...     Tom Gayner  New holding
+2   Weave Communications Inc         $21.13  ...   Tiger Global  New holding
+
+[3 rows x 5 columns]
+23-12-2021 10:03:13.343 INFO mail - check_new_companies: found new companies
+23-12-2021 10:03:13.343 INFO mail - get_receivers_address: receivers: ['luca.benzi.92@gmail.com', 'ciao@hotmail.it']
+23-12-2021 10:03:13.343 INFO mail - send_mail: sender_email: btmercati@gmail.com - receiver_email: ['luca.benzi.92@gmail.com', 'ciao@hotmail.it'] 
+23-12-2021 10:03:13.347 ERROR main_test - IPO_Fillant: send_mail_ssl() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "C:\Users\benz1\PycharmProjects\IPO_Flippant\main_test.py", line 22, in IPO_Fillant
+    mail.send_mail(data)
+  File "C:\Users\benz1\PycharmProjects\IPO_Flippant\mail.py", line 40, in send_mail
+    send_mail_ssl(message, password, data)
+TypeError: send_mail_ssl() takes 2 positional arguments but 3 were given
+23-12-2021 10:03:41.370 INFO main_test - <module>: -----------------PGM-STARTED---------------------
+23-12-2021 10:03:42.965 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 431.400000 %.
+23-12-2021 10:03:42.966 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:42.968 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 266.300000 %.
+23-12-2021 10:03:42.969 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:42.973 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 185.700000 %.
+23-12-2021 10:03:42.975 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:42.977 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 288.500000 %.
+23-12-2021 10:03:42.978 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:42.980 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 269.500000 %.
+23-12-2021 10:03:42.980 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:42.982 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 290.100000 %.
+23-12-2021 10:03:42.983 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 262.300000 %.
+23-12-2021 10:03:42.985 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:42.986 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:42.986 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:42.987 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:42.988 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:42.989 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:42.990 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:43.005 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 261.500000 %.
+23-12-2021 10:03:43.007 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 266.600000 %.
+23-12-2021 10:03:43.007 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:43.008 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:43.009 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 269.900000 %.
+23-12-2021 10:03:43.010 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:43.011 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:43.012 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 145.700000 %.
+23-12-2021 10:03:43.015 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:43.017 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 149.700000 %.
+23-12-2021 10:03:43.017 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:43.019 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 136.400000 %.
+23-12-2021 10:03:43.020 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 211.800000 %.
+23-12-2021 10:03:43.021 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 297.100000 %.
+23-12-2021 10:03:43.022 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 242.800000 %.
+23-12-2021 10:03:43.024 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:43.025 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:43.027 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 151.300000 %.
+23-12-2021 10:03:43.317 INFO scraper - get_data: Found new company ('Altus Power Inc - Class A', '$10.75', '$10.25', 'Jeffrey Ubben', 'New holding')
+23-12-2021 10:03:44.207 INFO scraper - get_data: Found new company ('Hagerty Inc - Class A', '-', '$15.44', 'Tom Gayner', 'New holding')
+23-12-2021 10:03:44.968 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 381.750000 %.
+23-12-2021 10:03:44.968 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.969 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 279.700000 %.
+23-12-2021 10:03:44.969 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.970 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 220.900000 %.
+23-12-2021 10:03:44.970 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.971 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 324.700000 %.
+23-12-2021 10:03:44.971 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.972 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 280.050000 %.
+23-12-2021 10:03:44.972 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.973 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 264.350000 %.
+23-12-2021 10:03:44.973 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 242.800000 %.
+23-12-2021 10:03:44.973 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.973 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.973 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.974 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.974 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.974 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.974 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.974 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 256.450000 %.
+23-12-2021 10:03:44.975 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 250.750000 %.
+23-12-2021 10:03:44.975 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.975 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.976 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 276.150000 %.
+23-12-2021 10:03:44.976 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.976 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.977 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 331.350000 %.
+23-12-2021 10:03:44.977 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.977 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 311.100000 %.
+23-12-2021 10:03:44.977 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.978 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 189.600000 %.
+23-12-2021 10:03:44.979 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 190.700000 %.
+23-12-2021 10:03:44.980 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 249.200000 %.
+23-12-2021 10:03:44.981 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 213.550000 %.
+23-12-2021 10:03:44.981 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.981 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:44.983 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 191.700000 %.
+23-12-2021 10:03:45.157 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 289.050000 %.
+23-12-2021 10:03:45.158 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.159 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 272.950000 %.
+23-12-2021 10:03:45.159 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.160 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 245.400000 %.
+23-12-2021 10:03:45.160 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.160 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 295.400000 %.
+23-12-2021 10:03:45.160 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.161 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 273.450000 %.
+23-12-2021 10:03:45.161 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.162 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 251.350000 %.
+23-12-2021 10:03:45.163 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 270.750000 %.
+23-12-2021 10:03:45.163 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.163 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.163 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.163 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.163 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.163 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.163 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.164 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 328.550000 %.
+23-12-2021 10:03:45.164 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 355.000000 %.
+23-12-2021 10:03:45.165 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.165 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.165 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 333.050000 %.
+23-12-2021 10:03:45.165 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.165 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.166 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 317.200000 %.
+23-12-2021 10:03:45.166 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.167 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 294.950000 %.
+23-12-2021 10:03:45.167 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.168 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 258.550000 %.
+23-12-2021 10:03:45.168 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 224.400000 %.
+23-12-2021 10:03:45.169 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 301.600000 %.
+23-12-2021 10:03:45.171 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 217.950000 %.
+23-12-2021 10:03:45.171 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.171 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.171 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 211.500000 %.
+23-12-2021 10:03:45.337 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 461.400000 %.
+23-12-2021 10:03:45.337 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.339 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 330.600000 %.
+23-12-2021 10:03:45.339 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.339 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 295.500000 %.
+23-12-2021 10:03:45.339 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.340 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 342.800000 %.
+23-12-2021 10:03:45.340 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.341 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 330.400000 %.
+23-12-2021 10:03:45.341 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.342 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 303.700000 %.
+23-12-2021 10:03:45.342 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 319.000000 %.
+23-12-2021 10:03:45.342 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.342 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.342 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.342 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.342 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.342 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.342 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.343 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 291.200000 %.
+23-12-2021 10:03:45.344 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 322.800000 %.
+23-12-2021 10:03:45.344 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.344 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.344 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 291.800000 %.
+23-12-2021 10:03:45.344 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.344 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.345 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 340.600000 %.
+23-12-2021 10:03:45.345 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.346 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 423.000000 %.
+23-12-2021 10:03:45.346 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.346 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 345.200000 %.
+23-12-2021 10:03:45.347 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 339.900000 %.
+23-12-2021 10:03:45.347 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 298.700000 %.
+23-12-2021 10:03:45.348 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 276.300000 %.
+23-12-2021 10:03:45.348 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.348 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:45.349 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 257.900000 %.
+23-12-2021 10:03:45.641 INFO scraper - get_data: Found new company ('Weave Communications Inc', '$21.13', '$14.67', 'Tiger Global', 'New holding')
+23-12-2021 10:03:46.377 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 325.950000 %.
+23-12-2021 10:03:46.378 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.379 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 311.050000 %.
+23-12-2021 10:03:46.379 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.380 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 290.250000 %.
+23-12-2021 10:03:46.380 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.380 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 378.500000 %.
+23-12-2021 10:03:46.380 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.381 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 313.950000 %.
+23-12-2021 10:03:46.381 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.382 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 296.100000 %.
+23-12-2021 10:03:46.382 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 282.300000 %.
+23-12-2021 10:03:46.382 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.383 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.383 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.383 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.383 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.383 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.383 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.384 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 315.350000 %.
+23-12-2021 10:03:46.384 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 334.250000 %.
+23-12-2021 10:03:46.384 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.384 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.385 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 332.050000 %.
+23-12-2021 10:03:46.385 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.385 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.386 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 390.200000 %.
+23-12-2021 10:03:46.386 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.387 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 356.450000 %.
+23-12-2021 10:03:46.387 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.387 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 288.700000 %.
+23-12-2021 10:03:46.388 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 324.800000 %.
+23-12-2021 10:03:46.389 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 359.250000 %.
+23-12-2021 10:03:46.389 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 296.800000 %.
+23-12-2021 10:03:46.389 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.389 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.390 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 261.850000 %.
+23-12-2021 10:03:46.581 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 356.050000 %.
+23-12-2021 10:03:46.582 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.583 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 264.450000 %.
+23-12-2021 10:03:46.583 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.584 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 222.400000 %.
+23-12-2021 10:03:46.584 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.584 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 270.850000 %.
+23-12-2021 10:03:46.584 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.585 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 252.950000 %.
+23-12-2021 10:03:46.585 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.586 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 227.700000 %.
+23-12-2021 10:03:46.587 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 205.700000 %.
+23-12-2021 10:03:46.587 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.587 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.588 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.588 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.588 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.588 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.588 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.589 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 281.700000 %.
+23-12-2021 10:03:46.589 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 276.000000 %.
+23-12-2021 10:03:46.589 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.590 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.590 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 202.900000 %.
+23-12-2021 10:03:46.590 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.590 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.591 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 256.250000 %.
+23-12-2021 10:03:46.591 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.592 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 273.950000 %.
+23-12-2021 10:03:46.592 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.592 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 204.150000 %.
+23-12-2021 10:03:46.593 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 209.700000 %.
+23-12-2021 10:03:46.594 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 307.300000 %.
+23-12-2021 10:03:46.594 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 213.550000 %.
+23-12-2021 10:03:46.595 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.595 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:46.595 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 184.300000 %.
+23-12-2021 10:03:46.606 INFO mail - check_new_companies: old companies: 
+                Company Name Investor Price  ...       Investor       Action
+0  Altus Power Inc - Class A         $10.75  ...  Jeffrey Ubben  New holding
+1      Hagerty Inc - Class A              -  ...     Tom Gayner  New holding
+2   Weave Communications Inc         $21.13  ...   Tiger Global  New holding
+
+[3 rows x 5 columns]
+23-12-2021 10:03:46.610 INFO mail - check_new_companies: new companies: 
+                Company Name Investor Price  ...       Investor       Action
+0  Altus Power Inc - Class A         $10.75  ...  Jeffrey Ubben  New holding
+1      Hagerty Inc - Class A              -  ...     Tom Gayner  New holding
+2   Weave Communications Inc         $21.13  ...   Tiger Global  New holding
+
+[3 rows x 5 columns]
+23-12-2021 10:03:46.611 INFO mail - check_new_companies: no companies
+23-12-2021 10:03:46.611 INFO main_test - <module>: -----------------PGM-ENDED---------------------
+
+
+
+
+
+
+
+
+
+
+
+
+23-12-2021 10:03:57.229 INFO main_test - <module>: -----------------PGM-STARTED---------------------
+23-12-2021 10:03:58.485 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 431.400000 %.
+23-12-2021 10:03:58.486 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.487 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 266.300000 %.
+23-12-2021 10:03:58.488 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.492 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 185.700000 %.
+23-12-2021 10:03:58.493 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.495 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 288.500000 %.
+23-12-2021 10:03:58.496 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.497 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 269.500000 %.
+23-12-2021 10:03:58.498 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.499 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 290.100000 %.
+23-12-2021 10:03:58.501 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 262.300000 %.
+23-12-2021 10:03:58.502 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.503 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.503 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.504 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.505 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.506 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.506 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.521 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 261.500000 %.
+23-12-2021 10:03:58.523 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 266.600000 %.
+23-12-2021 10:03:58.524 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.524 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.525 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 269.900000 %.
+23-12-2021 10:03:58.526 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.527 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.529 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 145.700000 %.
+23-12-2021 10:03:58.531 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.532 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 149.700000 %.
+23-12-2021 10:03:58.533 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.534 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 136.400000 %.
+23-12-2021 10:03:58.535 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 211.800000 %.
+23-12-2021 10:03:58.537 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 297.100000 %.
+23-12-2021 10:03:58.538 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 242.800000 %.
+23-12-2021 10:03:58.539 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.540 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:03:58.541 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 151.300000 %.
+23-12-2021 10:03:58.829 INFO scraper - get_data: Found new company ('Altus Power Inc - Class A', '$10.75', '$10.25', 'Jeffrey Ubben', 'New holding')
+23-12-2021 10:03:59.694 INFO scraper - get_data: Found new company ('Hagerty Inc - Class A', '-', '$15.44', 'Tom Gayner', 'New holding')
+23-12-2021 10:04:00.174 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 381.750000 %.
+23-12-2021 10:04:00.174 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.175 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 279.700000 %.
+23-12-2021 10:04:00.175 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.176 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 220.900000 %.
+23-12-2021 10:04:00.176 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.177 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 324.700000 %.
+23-12-2021 10:04:00.177 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.178 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 280.050000 %.
+23-12-2021 10:04:00.178 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.178 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 264.350000 %.
+23-12-2021 10:04:00.179 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 242.800000 %.
+23-12-2021 10:04:00.179 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.179 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.179 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.179 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.180 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.180 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.180 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.180 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 256.450000 %.
+23-12-2021 10:04:00.181 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 250.750000 %.
+23-12-2021 10:04:00.181 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.181 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.182 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 276.150000 %.
+23-12-2021 10:04:00.182 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.182 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.182 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 331.350000 %.
+23-12-2021 10:04:00.182 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.183 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 311.100000 %.
+23-12-2021 10:04:00.183 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.184 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 189.600000 %.
+23-12-2021 10:04:00.185 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 190.700000 %.
+23-12-2021 10:04:00.185 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 249.200000 %.
+23-12-2021 10:04:00.186 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 213.550000 %.
+23-12-2021 10:04:00.186 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.186 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.187 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 191.700000 %.
+23-12-2021 10:04:00.651 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 289.050000 %.
+23-12-2021 10:04:00.652 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.653 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 272.950000 %.
+23-12-2021 10:04:00.653 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.653 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 245.400000 %.
+23-12-2021 10:04:00.654 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.654 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 295.400000 %.
+23-12-2021 10:04:00.654 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.655 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 273.450000 %.
+23-12-2021 10:04:00.655 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.656 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 251.350000 %.
+23-12-2021 10:04:00.656 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 270.750000 %.
+23-12-2021 10:04:00.656 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.656 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.656 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.657 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.657 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.657 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.657 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.657 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 328.550000 %.
+23-12-2021 10:04:00.658 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 355.000000 %.
+23-12-2021 10:04:00.658 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.658 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.659 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 333.050000 %.
+23-12-2021 10:04:00.659 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.659 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.659 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 317.200000 %.
+23-12-2021 10:04:00.660 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.660 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 294.950000 %.
+23-12-2021 10:04:00.660 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.661 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 258.550000 %.
+23-12-2021 10:04:00.661 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 224.400000 %.
+23-12-2021 10:04:00.662 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 301.600000 %.
+23-12-2021 10:04:00.663 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 217.950000 %.
+23-12-2021 10:04:00.663 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.663 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.663 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 211.500000 %.
+23-12-2021 10:04:00.825 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 461.400000 %.
+23-12-2021 10:04:00.826 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.827 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 330.600000 %.
+23-12-2021 10:04:00.827 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.828 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 295.500000 %.
+23-12-2021 10:04:00.828 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.829 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 342.800000 %.
+23-12-2021 10:04:00.829 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.830 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 330.400000 %.
+23-12-2021 10:04:00.830 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.830 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 303.700000 %.
+23-12-2021 10:04:00.831 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 319.000000 %.
+23-12-2021 10:04:00.831 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.831 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.831 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.831 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.831 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.831 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.831 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.832 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 291.200000 %.
+23-12-2021 10:04:00.832 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 322.800000 %.
+23-12-2021 10:04:00.832 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.832 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.833 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 291.800000 %.
+23-12-2021 10:04:00.833 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.833 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.833 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 340.600000 %.
+23-12-2021 10:04:00.833 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.834 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 423.000000 %.
+23-12-2021 10:04:00.834 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.835 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 345.200000 %.
+23-12-2021 10:04:00.835 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 339.900000 %.
+23-12-2021 10:04:00.836 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 298.700000 %.
+23-12-2021 10:04:00.836 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 276.300000 %.
+23-12-2021 10:04:00.836 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.836 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:04:00.837 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 257.900000 %.
+23-12-2021 10:04:01.118 INFO scraper - get_data: Found new company ('Weave Communications Inc', '$21.13', '$14.67', 'Tiger Global', 'New holding')
+23-12-2021 10:04:01.860 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 325.950000 %.
+23-12-2021 10:04:01.860 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.861 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 311.050000 %.
+23-12-2021 10:04:01.861 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.862 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 290.250000 %.
+23-12-2021 10:04:01.862 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.863 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 378.500000 %.
+23-12-2021 10:04:01.863 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.863 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 313.950000 %.
+23-12-2021 10:04:01.863 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.864 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 296.100000 %.
+23-12-2021 10:04:01.865 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 282.300000 %.
+23-12-2021 10:04:01.865 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.865 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.865 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.865 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.865 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.865 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.865 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.866 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 315.350000 %.
+23-12-2021 10:04:01.866 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 334.250000 %.
+23-12-2021 10:04:01.866 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.866 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.867 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 332.050000 %.
+23-12-2021 10:04:01.867 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.867 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.868 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 390.200000 %.
+23-12-2021 10:04:01.868 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.869 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 356.450000 %.
+23-12-2021 10:04:01.869 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.870 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 288.700000 %.
+23-12-2021 10:04:01.870 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 324.800000 %.
+23-12-2021 10:04:01.871 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 359.250000 %.
+23-12-2021 10:04:01.872 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 296.800000 %.
+23-12-2021 10:04:01.872 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.872 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:04:01.873 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 261.850000 %.
+23-12-2021 10:04:02.071 INFO api - from_bytes: cp037 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 356.050000 %.
+23-12-2021 10:04:02.071 INFO api - from_bytes: cp1026 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.072 INFO api - from_bytes: cp1125 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 264.450000 %.
+23-12-2021 10:04:02.072 INFO api - from_bytes: cp1140 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.073 INFO api - from_bytes: cp1256 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 222.400000 %.
+23-12-2021 10:04:02.073 INFO api - from_bytes: cp273 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.074 INFO api - from_bytes: cp437 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 270.850000 %.
+23-12-2021 10:04:02.074 INFO api - from_bytes: cp500 is deemed too similar to code page cp037 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.075 INFO api - from_bytes: cp775 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 252.950000 %.
+23-12-2021 10:04:02.075 INFO api - from_bytes: cp850 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.076 INFO api - from_bytes: cp852 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 227.700000 %.
+23-12-2021 10:04:02.076 INFO api - from_bytes: cp855 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 205.700000 %.
+23-12-2021 10:04:02.076 INFO api - from_bytes: cp858 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.076 INFO api - from_bytes: cp860 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.077 INFO api - from_bytes: cp861 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.077 INFO api - from_bytes: cp862 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.077 INFO api - from_bytes: cp863 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.077 INFO api - from_bytes: cp865 is deemed too similar to code page cp437 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.077 INFO api - from_bytes: cp866 is deemed too similar to code page cp1125 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.078 INFO api - from_bytes: iso8859_10 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 281.700000 %.
+23-12-2021 10:04:02.078 INFO api - from_bytes: iso8859_13 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 276.000000 %.
+23-12-2021 10:04:02.078 INFO api - from_bytes: iso8859_14 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.079 INFO api - from_bytes: iso8859_15 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.079 INFO api - from_bytes: iso8859_16 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 202.900000 %.
+23-12-2021 10:04:02.079 INFO api - from_bytes: iso8859_2 is deemed too similar to code page iso8859_16 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.079 INFO api - from_bytes: iso8859_4 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.080 INFO api - from_bytes: iso8859_5 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 256.250000 %.
+23-12-2021 10:04:02.080 INFO api - from_bytes: iso8859_9 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.081 INFO api - from_bytes: koi8_r was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 273.950000 %.
+23-12-2021 10:04:02.081 INFO api - from_bytes: latin_1 is deemed too similar to code page iso8859_10 and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.082 INFO api - from_bytes: mac_cyrillic was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 204.150000 %.
+23-12-2021 10:04:02.082 INFO api - from_bytes: mac_greek was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 209.700000 %.
+23-12-2021 10:04:02.083 INFO api - from_bytes: mac_iceland was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 307.300000 %.
+23-12-2021 10:04:02.084 INFO api - from_bytes: mac_latin2 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 213.550000 %.
+23-12-2021 10:04:02.084 INFO api - from_bytes: mac_roman is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.084 INFO api - from_bytes: mac_turkish is deemed too similar to code page mac_iceland and was consider unsuited already. Continuing!
+23-12-2021 10:04:02.085 INFO api - from_bytes: ptcp154 was excluded because of initial chaos probing. Gave up 2 time(s). Computed mean chaos is 184.300000 %.
+23-12-2021 10:04:02.095 INFO mail - check_new_companies: old companies: 
+                Company Name Investor Price  ...       Investor       Action
+0  Altus Power Inc - Class A         $10.75  ...  Jeffrey Ubben  New holding
+1      Hagerty Inc - Class A              -  ...     Tom Gayner  New holding
+2   Weave Communications Inc         $21.13  ...   Tiger Global  New holding
+
+[3 rows x 5 columns]
+23-12-2021 10:04:02.100 INFO mail - check_new_companies: new companies: 
+                Company Name Investor Price  ...       Investor       Action
+0  Altus Power Inc - Class A         $10.75  ...  Jeffrey Ubben  New holding
+1      Hagerty Inc - Class A              -  ...     Tom Gayner  New holding
+2   Weave Communications Inc         $21.13  ...   Tiger Global  New holding
+
+[3 rows x 5 columns]
+23-12-2021 10:04:02.100 INFO mail - check_new_companies: found new companies
+23-12-2021 10:04:02.100 INFO mail - get_receivers_address: receivers: ['luca.benzi.92@gmail.com', 'ciao@hotmail.it']
+23-12-2021 10:04:02.100 INFO mail - send_mail: sender_email: btmercati@gmail.com - receiver_email: ['luca.benzi.92@gmail.com', 'ciao@hotmail.it'] 
+23-12-2021 10:04:02.352 INFO mail - send_mail_ssl: login into mail account
+23-12-2021 10:04:02.695 INFO mail - send_mail_ssl: login OK
+23-12-2021 10:04:02.695 INFO mail - send_mail_ssl: sending mail
+23-12-2021 10:04:03.815 INFO mail - send_mail_ssl: mail sent with the following message: Content-Type: multipart/alternative; boundary="===============5605928690278477974=="
+MIME-Version: 1.0
+Subject: INVESTITORI IPO
+From: btmercati@gmail.com
+To: luca.benzi.92@gmail.com, ciao@hotmail.it
+
+--===============5605928690278477974==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html><html>
+<head><style>
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style><table border="1" class="dataframe" id="customers">  <thead>    <tr style="text-align: right;">      <th></th>      <th>Company Name</th>      <th>Investor Price</th>      <th>Current Price</th>      <th>Investor</th>      <th>Action</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>Altus Power Inc - Class A</td>      <td>$10.75</td>      <td>$10.25</td>      <td>Jeffrey Ubben</td>      <td>New holding</td>    </tr>    <tr>      <th>1</th>      <td>Hagerty Inc - Class A</td>      <td>-</td>      <td>$15.44</td>      <td>Tom Gayner</td>      <td>New holding</td>    </tr>    <tr>      <th>2</th>      <td>Weave Communications Inc</td>      <td>$21.13</td>      <td>$14.67</td>      <td>Tiger Global</td>      <td>New holding</td>    </tr>  </tbody></table></html>
+--===============5605928690278477974==--
+
+23-12-2021 10:04:03.874 INFO main_test - <module>: -----------------PGM-ENDED---------------------
+
+
+
+
+
+
+
+
+
+
+
+

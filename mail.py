@@ -37,7 +37,7 @@ def send_mail(data):
     password = 'DE_$%5#*Ee'
     logging.info(f"sender_email: {sender_email} - receiver_email: {receiver_email} ")
     message = create_message(sender_email, receiver_email, data)
-    send_mail_ssl(message, password, data)
+    send_mail_ssl(message, password)
 
 
 def create_message(sender_email, receiver_email, data):
