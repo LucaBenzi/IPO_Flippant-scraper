@@ -13,6 +13,8 @@ logging.basicConfig(
 
 
 def IPO_Fillant():
+    """Check if there are some new available companies in the list of big investors.
+    If so notifies customers by email"""
     try:
         print('Pgm started')
         data = scraper.get_data()
@@ -27,4 +29,3 @@ if __name__ == '__main__':
     logging.info(f"-----------------PGM-STARTED---------------------")
     IPO_Fillant()
     logging.info(f"-----------------PGM-ENDED---------------------\n\n\n\n\n\n\n\n\n\n\n\n")
-

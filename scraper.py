@@ -1,6 +1,4 @@
-import pandas as pd
 import requests
-import selenium
 from bs4 import BeautifulSoup
 import logging
 
@@ -14,7 +12,7 @@ logging.basicConfig(
 
 def get_data():
     """
-    :return: list of touple of IPO bought
+    :return: list of touple of IPO bought from big investors
     """
     URL = 'https://cheaperthanguru.com/transactions'
     page = requests.get(URL)

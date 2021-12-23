@@ -15,7 +15,7 @@ logging.basicConfig(
 
 def check_new_companies(data):
     old_companies = pd.read_csv("companies.csv")
-    df = data_to_html(data)
+    df = touples_to_dataframe(data)
     df.to_csv("companies.csv", index=False)
     logging.info(f"old companies: \n{old_companies}")
     logging.info(f"new companies: \n{df}")
@@ -26,51 +26,77 @@ def check_new_companies(data):
         logging.info(f"no companies")
         return False
 
-def send_mail(data):    # data must be a list of touple
+
+def send_mail(data):
+    """
+    :param data: must be a list of touple
+    :return:
+    """
     sender_email = "btmercati@gmail.com"
     receiver_email = get_receivers_address()
     password = 'DE_$%5#*Ee'
     logging.info(f"sender_email: {sender_email} - receiver_email: {receiver_email} ")
+    message = create_message(sender_email, receiver_email, data)
+    send_mail_ssl(message, password, data)
 
+
+def create_message(sender_email, receiver_email, data):
+    """
+    :param sender_email: string
+    :param receiver_email: list of strings
+    :param data: list of touple
+    :return: message suitable for email: email.mime.multipart.MIMEMultipart
+    """
     message = MIMEMultipart("alternative")
     message["Subject"] = "INVESTITORI IPO"
     message["From"] = sender_email
     message["To"] = ", ".join(receiver_email)
-
-    html = '<html>' + css
-    html = html + data_to_html(data).to_html().replace('\n', '')
+    html = '<html>' + '\n' + '<head>' + get_table_style()
+    html = html + touples_to_dataframe(data).to_html().replace('\n', '')
     html = html.replace('<table border="1" class="dataframe">', '<table border="1" class="dataframe" id="customers">')
     html = '<!DOCTYPE html>' + html + '</html>'
-    print(html)
     body = MIMEText(html, "html")
     message.attach(body)
+    return message
 
+
+def send_mail_ssl(message, password):
+    """
+    :param message: message suitable for email (contains sender and receivers): email.mime.multipart.MIMEMultipart
+    :param password: string
+    :return:
+    """
     port = 465  # For SSL
-
-    # Create a secure SSL context
     context = ssl.create_default_context()
-
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
         try:
             logging.info(f"login into mail account")
-            server.login(sender_email, password)
+            server.login(message["From"], password)
             logging.info(f"login OK")
         except Exception as e:
             logging.error(e, exc_info=True)
-        # TODO: Send email here
         try:
             logging.info(f"sending mail")
-            server.sendmail(sender_email, receiver_email, message.as_string())
+            server.sendmail(message["From"], message["To"].split(","), message.as_string())
             logging.info(f"mail sent with the following message: {message.as_string()}")
         except Exception as e:
             logging.error(e, exc_info=True)
 
 
-def data_to_html(tuple):
+def touples_to_dataframe(tuple):
+    """
+    :param tuple: list of touple, first touple must contains the columns name
+    :return: dataframe
+    """
     return pd.DataFrame(tuple[1:], columns=tuple[0])
 
 
 def get_receivers_address():
+    """
+    return a list of receivers stored in receivers.txt file.
+    receivers mails must be separated with ',' without spaces
+    :return: list of strings
+    """
     try:
         receivers = open("receivers.txt", "r").read().split(",")
     except Exception as e:
@@ -79,30 +105,12 @@ def get_receivers_address():
     logging.info(f"receivers: {receivers}")
     return receivers
 
-css = '''
-<head>
-<style>
-#customers {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
 
-#customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04AA6D;
-  color: white;
-}
-</style>
-'''
+def get_table_style():
+    """
+    get table style from css file
+    :return: string for table style
+    """
+    with open('static/table_style.css', 'r') as file:
+        css = file.read()
+    return '<style>\n' + css + '</style>'
