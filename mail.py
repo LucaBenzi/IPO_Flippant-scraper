@@ -56,10 +56,10 @@ def create_message(sender_email, receiver_email, data):
     message["Subject"] = "INVESTITORI IPO"
     message["From"] = sender_email
     message["To"] = ", ".join(receiver_email)
-    html = '<html>' + '\n' + '<head>' + get_table_style() + '</head>'
-    html = html + touples_to_dataframe(data).to_html().replace('\n', '')
+    html = '<html>\n' + '<head>' + '\n<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />\n' + get_table_style() + '</head>'
+    html = html + '<body>' + touples_to_dataframe(data).to_html().replace('\n', '') + '</body>'
     html = html.replace('<table border="1" class="dataframe">', '<table border="1" class="dataframe" id="customers">')
-    html = '<!DOCTYPE html>' + html + '</html>'
+    html = '<!DOCTYPE html>\n' + html + '\n</html>'
     body = MIMEText(html, "html")
     message.attach(body)
     return message
