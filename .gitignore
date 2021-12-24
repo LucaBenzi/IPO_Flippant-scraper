@@ -1,4 +1,4 @@
-log/*
+log/events.log
 receivers.txt
 venv
 companies.csv

@@ -14,8 +14,13 @@ logging.basicConfig(
 
 
 def check_new_companies(data):
+    """
+    checks if websites contains new companies
+    :param data: list of touple
+    :return: Boolean: True if new companies available
+    """
     old_companies = pd.read_csv("companies.csv")
-    df = touples_to_dataframe(data)
+    df = touples_to_dataframe(data).drop('Current Price', axis=1)
     df.to_csv("companies.csv", index=False)
     logging.info(f"old companies: \n{old_companies}")
     logging.info(f"new companies: \n{df}")

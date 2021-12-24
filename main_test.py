@@ -1,5 +1,3 @@
-import schedule
-import time
 import mail
 import scraper
 import logging
@@ -17,8 +15,11 @@ def IPO_Fillant():
     If so notifies customers by email"""
     try:
         print('Pgm started')
+        print('Getting data from web...')
         data = scraper.get_data()
+        print('checking new companies...')
         if mail.check_new_companies(data):
+            print('sending mail...')
             mail.send_mail(data)
         print('Pgm end')
     except Exception as e:
