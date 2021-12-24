@@ -6,7 +6,7 @@ logging.basicConfig(
     filename='log/events.log',
     level=logging.INFO,
     format='%(asctime)s.%(msecs)03d %(levelname)s %(module)s - %(funcName)s: %(message)s',
-    datefmt='%d-%m-%Y %H:%M:%S',
+    datefmt='%d-%m-%Y %H:%M:%S'
 )
 
 
@@ -66,12 +66,7 @@ def get_picture_url(table_row):
     return picture[0].get('src')
 
 
-def isIPO(picture_url):
+def isIPO(picture_url): # questa funzione sta tirando loggate assurde.
     """check if the company is a IPO by looking at the logo.
     If a company doesn't have a logo, classify it as IPO"""
-    if requests.get(picture_url).text.count('Error'):
-        return True
-    else:
-        return False
-
-
+    return not requests.get(picture_url).ok
