@@ -15,12 +15,12 @@ def get_data():
                               class_="share__top-box-link js-hover-parent js-accordion js-line-chart-click-container")
     logger.info(f"There are {len(table_row)} transactions on the website")
     companies = []
-    companies.append(('Company Name', 'Investor Price', 'Current Price', 'Investor','Action'))
+    companies.append(('Ticker', 'Company Name', 'Investor Price', 'Current Price', 'Investor','Action'))
 
     for t in table_row:
         picture_url = get_picture_url(t)
         if isIPO(picture_url) and get_action(t) == 'New holding':
-            company = (get_company_name(t), get_guru_price(t), get_current_price(t), get_guru_name(t), get_action(t))
+            company = (get_company_ticker_from_picture_url(picture_url), get_company_name(t), get_guru_price(t), get_current_price(t), get_guru_name(t), get_action(t))
             logger.info(f"Found new company {company}")
             companies.append(company)
     return companies
@@ -60,6 +60,11 @@ def get_picture_url(table_row):
     """get the url of the picture so we can discover if the company has a logo or not"""
     picture = table_row.find_all("img", class_="share__company-logo")
     return picture[0].get('src')
+
+
+def get_company_ticker_from_picture_url(picture_url):
+    """get the url of the picture so we can discover if the company has a logo or not"""
+    return picture_url.replace('https://storage.googleapis.com/iex/api/logos/','').replace('.png','')
 
 
 def isIPO(picture_url): # questa funzione sta tirando loggate assurde.

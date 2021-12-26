@@ -21,7 +21,7 @@ def IPO_Fillant():
             logger.info('sending mail...')
             mail.send_mail(data)
     except Exception as e:
-        logging.error(e, exc_info=True)
+        logger.error(e, exc_info=True)
         raise e
 
 if __name__ == '__main__':
