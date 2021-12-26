@@ -3,15 +3,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import pandas as pd
 import logging
-from pandas.testing import assert_frame_equal
 
-logging.basicConfig(
-    filename='log/events.log',
-    level=logging.INFO,
-    format='%(asctime)s.%(msecs)03d %(levelname)s %(module)s - %(funcName)s: %(message)s',
-    datefmt='%d-%m-%Y %H:%M:%S',
-)
-
+logger = logging.getLogger('sampleLogger')
 
 def check_new_companies(data):
     """
@@ -22,13 +15,13 @@ def check_new_companies(data):
     old_companies = pd.read_csv("companies.csv")
     df = touples_to_dataframe(data).drop('Current Price', axis=1)
     df.to_csv("companies.csv", index=False)
-    logging.info(f"old companies: \n{old_companies}")
-    logging.info(f"new companies: \n{df}")
+    logger.info(f"old companies: \n{old_companies}")
+    logger.info(f"new companies: \n{df}")
     if not df.equals(old_companies):
-        logging.info(f"found new companies")
+        logger.info(f"found new companies")
         return True
     else:
-        logging.info(f"no companies")
+        logger.info(f"no companies")
         return False
 
 
@@ -40,7 +33,7 @@ def send_mail(data):
     sender_email = "btmercati@gmail.com"
     receiver_email = get_receivers_address()
     password = 'DE_$%5#*Ee'
-    logging.info(f"sender_email: {sender_email} - receiver_email: {receiver_email} ")
+    logger.info(f"sender_email: {sender_email} - receiver_email: {receiver_email} ")
     message = create_message(sender_email, receiver_email, data)
     send_mail_ssl(message, password)
 
@@ -75,17 +68,17 @@ def send_mail_ssl(message, password):
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
         try:
-            logging.info(f"login into mail account")
+            logger.info(f"login into mail account")
             server.login(message["From"], password)
-            logging.info(f"login OK")
+            logger.info(f"login OK")
         except Exception as e:
-            logging.error(e, exc_info=True)
+            logger.error(e, exc_info=True)
         try:
-            logging.info(f"sending mail")
+            logger.info(f"sending mail")
             server.sendmail(message["From"], message["To"].split(","), message.as_string())
-            logging.info(f"mail sent with the following message: {message.as_string()}")
+            logger.info(f"mail sent with the following message: {message.as_string()}")
         except Exception as e:
-            logging.error(e, exc_info=True)
+            logger.error(e, exc_info=True)
 
 
 def touples_to_dataframe(tuple):
@@ -105,9 +98,9 @@ def get_receivers_address():
     try:
         receivers = open("receivers.txt", "r").read().split(",")
     except Exception as e:
-        logging.info(f"Error reading receivers addresses: {e}")
+        logger.info(f"Error reading receivers addresses: {e}")
         receivers = ["luca.benzi.92@gmail.com","david.taraschi@gmail.com"]
-    logging.info(f"receivers: {receivers}")
+    logger.info(f"receivers: {receivers}")
     return receivers
 
 

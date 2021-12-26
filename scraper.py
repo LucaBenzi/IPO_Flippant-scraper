@@ -2,13 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import logging
 
-logging.basicConfig(
-    filename='log/events.log',
-    level=logging.INFO,
-    format='%(asctime)s.%(msecs)03d %(levelname)s %(module)s - %(funcName)s: %(message)s',
-    datefmt='%d-%m-%Y %H:%M:%S'
-)
-
+logger = logging.getLogger('sampleLogger')
 
 def get_data():
     """
@@ -19,13 +13,15 @@ def get_data():
     soup = BeautifulSoup(page.content, "html.parser")
     table_row = soup.find_all("div",
                               class_="share__top-box-link js-hover-parent js-accordion js-line-chart-click-container")
+    logger.info(f"There are {len(table_row)} transactions on the website")
     companies = []
     companies.append(('Company Name', 'Investor Price', 'Current Price', 'Investor','Action'))
+
     for t in table_row:
         picture_url = get_picture_url(t)
         if isIPO(picture_url) and get_action(t) == 'New holding':
             company = (get_company_name(t), get_guru_price(t), get_current_price(t), get_guru_name(t), get_action(t))
-            logging.info(f"Found new company {company}")
+            logger.info(f"Found new company {company}")
             companies.append(company)
     return companies
 
@@ -69,4 +65,5 @@ def get_picture_url(table_row):
 def isIPO(picture_url): # questa funzione sta tirando loggate assurde.
     """check if the company is a IPO by looking at the logo.
     If a company doesn't have a logo, classify it as IPO"""
+    logger.info(f"Checking picture: {picture_url}...")
     return not requests.get(picture_url).ok
