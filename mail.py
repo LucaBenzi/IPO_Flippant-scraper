@@ -49,10 +49,16 @@ def create_message(sender_email, receiver_email, data):
     message["Subject"] = "INVESTITORI IPO"
     message["From"] = sender_email
     message["To"] = ", ".join(receiver_email)
-    html = '<html>\n' + '<head>' + '\n<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />\n' + get_table_style() + '</head>'
-    html = html + '<body>' + touples_to_dataframe(data).to_html().replace('\n', '') + '</body>'
-    html = html.replace('<table border="1" class="dataframe">', '<table border="1" class="dataframe" id="customers">')
-    html = '<!DOCTYPE html>\n' + html + '\n</html>'
+
+    html = get_mail_html()
+    css = get_table_style()
+    table = get_table(data)
+    html = html.replace('Style Here',css)
+    html = html.replace('Table Here', table)
+    # html = '<html>\n' + '<head>' + '\n<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />\n' + get_table_style() + '</head>'
+    # html = html + '<body>' + touples_to_dataframe(data).to_html().replace('\n', '') + '</body>'
+    # html = html.replace('<table border="1" class="dataframe">', '<table border="1" class="dataframe" id="customers">')
+    # html = '<!DOCTYPE html>\n' + html + '\n</html>'
     body = MIMEText(html, "html")
     message.attach(body)
     return message
@@ -104,6 +110,16 @@ def get_receivers_address():
     return receivers
 
 
+def get_mail_html():
+    """
+    get mail structure from html file
+    :return: string for html structure
+    """
+    with open('static/mail.html', 'r') as file:
+        mail_html = file.read()
+    return mail_html
+
+
 def get_table_style():
     """
     get table style from css file
@@ -111,4 +127,9 @@ def get_table_style():
     """
     with open('static/table_style.css', 'r') as file:
         css = file.read()
-    return '<style>\n' + css + '</style>'
+    return css
+
+def get_table(data):
+    table = touples_to_dataframe(data).to_html()
+    table = table.replace('<table border="1" class="dataframe">', '<table border="1" class="dataframe" id="customers">')
+    return table
