@@ -1055,3 +1055,458 @@ Content-Transfer-Encoding: 7bit
 27-12-2021 09:22:25.126 INFO main_test - <module>: -----------------PGM-ENDED---------------------
 
 
+30-12-2021 12:06:41.097 INFO main_test - <module>: -----------------PGM-STARTED---------------------
+30-12-2021 12:06:41.098 INFO main_test - IPO_Fillant: Getting data from web...
+30-12-2021 12:06:42.468 INFO scraper - get_data: There are 15 transactions on the website
+30-12-2021 12:06:42.469 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:06:42.866 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LSXMA.png...
+30-12-2021 12:06:43.145 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:06:43.295 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/IEP.png...
+30-12-2021 12:06:43.591 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:06:43.750 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/AMPS.png...
+30-12-2021 12:06:44.041 INFO scraper - get_data: Found new company ('AMPS', 'Altus Power Inc - Class A', '$10.75', '$10.10', 'Jeffrey Ubben', 'New holding')
+30-12-2021 12:06:44.042 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:06:44.339 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HGTY.png...
+30-12-2021 12:06:44.628 INFO scraper - get_data: Found new company ('HGTY', 'Hagerty Inc - Class A', '-', '$14.92', 'Tom Gayner', 'New holding')
+30-12-2021 12:06:44.629 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:06:44.911 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:06:45.186 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:06:45.448 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/VST.png...
+30-12-2021 12:06:45.728 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LKQ.png...
+30-12-2021 12:06:46.013 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HRI.png...
+30-12-2021 12:06:46.296 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:06:46.575 INFO main_test - IPO_Fillant: checking new companies...
+30-12-2021 12:06:46.601 INFO mail - check_new_companies: old companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $10.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+2   WEAV   Weave Communications Inc         $21.13   Tiger Global  New holding
+30-12-2021 12:06:46.612 INFO mail - check_new_companies: new companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $10.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+30-12-2021 12:06:46.612 ERROR main_test - IPO_Fillant: 1
+Traceback (most recent call last):
+  File "C:\Users\benz1\PycharmProjects\IPO_Flippant\venv\lib\site-packages\pandas\core\indexes\base.py", line 3361, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:/Users/benz1/PycharmProjects/IPO_Flippant/main_test.py", line 20, in IPO_Fillant
+    if mail.check_new_companies(data):
+  File "C:\Users\benz1\PycharmProjects\IPO_Flippant\mail.py", line 20, in check_new_companies
+    if not df[1].equals(old_companies[1]):
+  File "C:\Users\benz1\PycharmProjects\IPO_Flippant\venv\lib\site-packages\pandas\core\frame.py", line 3458, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\benz1\PycharmProjects\IPO_Flippant\venv\lib\site-packages\pandas\core\indexes\base.py", line 3363, in get_loc
+    raise KeyError(key) from err
+KeyError: 1
+30-12-2021 12:08:09.185 INFO main_test - <module>: -----------------PGM-STARTED---------------------
+30-12-2021 12:08:09.185 INFO main_test - IPO_Fillant: Getting data from web...
+30-12-2021 12:08:10.440 INFO scraper - get_data: There are 15 transactions on the website
+30-12-2021 12:08:10.441 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:08:10.592 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LSXMA.png...
+30-12-2021 12:08:10.753 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:08:10.927 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/IEP.png...
+30-12-2021 12:08:11.124 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:08:11.290 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/AMPS.png...
+30-12-2021 12:08:11.565 INFO scraper - get_data: Found new company ('AMPS', 'Altus Power Inc - Class A', '$10.75', '$10.10', 'Jeffrey Ubben', 'New holding')
+30-12-2021 12:08:11.566 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:08:11.835 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HGTY.png...
+30-12-2021 12:08:12.130 INFO scraper - get_data: Found new company ('HGTY', 'Hagerty Inc - Class A', '-', '$14.92', 'Tom Gayner', 'New holding')
+30-12-2021 12:08:12.131 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:08:12.410 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:08:12.690 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:08:12.974 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/VST.png...
+30-12-2021 12:08:13.132 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LKQ.png...
+30-12-2021 12:08:13.287 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HRI.png...
+30-12-2021 12:08:13.443 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:08:13.723 INFO main_test - IPO_Fillant: checking new companies...
+30-12-2021 12:08:13.742 INFO mail - check_new_companies: old companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $10.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+30-12-2021 12:08:13.753 INFO mail - check_new_companies: new companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $10.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+30-12-2021 12:09:18.621 INFO mail - check_new_companies: no companies
+30-12-2021 12:10:12.787 INFO main_test - <module>: -----------------PGM-STARTED---------------------
+30-12-2021 12:10:12.787 INFO main_test - IPO_Fillant: Getting data from web...
+30-12-2021 12:10:14.118 INFO scraper - get_data: There are 15 transactions on the website
+30-12-2021 12:10:14.119 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:10:14.272 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LSXMA.png...
+30-12-2021 12:10:14.425 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:10:14.595 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/IEP.png...
+30-12-2021 12:10:14.801 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:10:15.182 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/AMPS.png...
+30-12-2021 12:10:15.474 INFO scraper - get_data: Found new company ('AMPS', 'Altus Power Inc - Class A', '$10.75', '$10.10', 'Jeffrey Ubben', 'New holding')
+30-12-2021 12:10:15.475 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:10:15.751 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HGTY.png...
+30-12-2021 12:10:16.050 INFO scraper - get_data: Found new company ('HGTY', 'Hagerty Inc - Class A', '-', '$14.92', 'Tom Gayner', 'New holding')
+30-12-2021 12:10:16.051 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:10:16.337 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:10:16.612 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:10:16.886 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/VST.png...
+30-12-2021 12:10:17.042 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LKQ.png...
+30-12-2021 12:10:17.206 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HRI.png...
+30-12-2021 12:10:17.376 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:10:17.662 INFO main_test - IPO_Fillant: checking new companies...
+30-12-2021 12:10:17.690 INFO mail - check_new_companies: old companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $11.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+30-12-2021 12:10:17.700 INFO mail - check_new_companies: new companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $10.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+30-12-2021 12:11:29.838 INFO main_test - <module>: -----------------PGM-STARTED---------------------
+30-12-2021 12:11:29.839 INFO main_test - IPO_Fillant: Getting data from web...
+30-12-2021 12:11:30.829 INFO scraper - get_data: There are 15 transactions on the website
+30-12-2021 12:11:30.830 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:11:31.037 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LSXMA.png...
+30-12-2021 12:11:31.204 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:11:31.357 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/IEP.png...
+30-12-2021 12:11:31.558 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:11:31.722 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/AMPS.png...
+30-12-2021 12:11:32.010 INFO scraper - get_data: Found new company ('AMPS', 'Altus Power Inc - Class A', '$10.75', '$10.10', 'Jeffrey Ubben', 'New holding')
+30-12-2021 12:11:32.010 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:11:32.305 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HGTY.png...
+30-12-2021 12:11:32.592 INFO scraper - get_data: Found new company ('HGTY', 'Hagerty Inc - Class A', '-', '$14.92', 'Tom Gayner', 'New holding')
+30-12-2021 12:11:32.593 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:11:32.879 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:11:33.166 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:11:33.468 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/VST.png...
+30-12-2021 12:11:33.635 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LKQ.png...
+30-12-2021 12:11:33.809 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HRI.png...
+30-12-2021 12:11:33.972 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:11:34.274 INFO main_test - IPO_Fillant: checking new companies...
+30-12-2021 12:11:34.292 INFO mail - check_new_companies: old companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $10.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+30-12-2021 12:11:34.302 INFO mail - check_new_companies: new companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $10.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+30-12-2021 12:11:42.855 INFO main_test - <module>: -----------------PGM-STARTED---------------------
+30-12-2021 12:11:42.856 INFO main_test - IPO_Fillant: Getting data from web...
+30-12-2021 12:11:43.878 INFO scraper - get_data: There are 15 transactions on the website
+30-12-2021 12:11:43.878 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:11:44.037 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LSXMA.png...
+30-12-2021 12:11:44.198 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:11:44.370 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/IEP.png...
+30-12-2021 12:11:44.558 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:11:44.714 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/AMPS.png...
+30-12-2021 12:11:45.053 INFO scraper - get_data: Found new company ('AMPS', 'Altus Power Inc - Class A', '$10.75', '$10.10', 'Jeffrey Ubben', 'New holding')
+30-12-2021 12:11:45.054 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:11:45.329 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HGTY.png...
+30-12-2021 12:11:45.609 INFO scraper - get_data: Found new company ('HGTY', 'Hagerty Inc - Class A', '-', '$14.92', 'Tom Gayner', 'New holding')
+30-12-2021 12:11:45.610 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:11:45.886 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:11:46.160 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:11:46.453 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/VST.png...
+30-12-2021 12:11:46.604 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LKQ.png...
+30-12-2021 12:11:46.778 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HRI.png...
+30-12-2021 12:11:46.943 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:11:47.217 INFO main_test - IPO_Fillant: checking new companies...
+30-12-2021 12:11:47.236 INFO mail - check_new_companies: old companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $12.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+30-12-2021 12:11:47.247 INFO mail - check_new_companies: new companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $10.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+30-12-2021 12:11:58.180 INFO mail - check_new_companies: Ticker                                 AMPS
+Company Name      Altus Power Inc - Class A
+Investor Price                       $10.75
+Investor                      Jeffrey Ubben
+Action                          New holding
+Name: 0, dtype: object   
+Ticker                                 AMPS
+Company Name      Altus Power Inc - Class A
+Investor Price                       $12.75
+Investor                      Jeffrey Ubben
+Action                          New holding
+Name: 0, dtype: object
+30-12-2021 12:12:04.945 INFO mail - check_new_companies: found new companies
+30-12-2021 12:12:26.305 INFO main_test - IPO_Fillant: sending mail...
+30-12-2021 12:12:26.306 INFO mail - get_receivers_address: receivers: ['luca.benzi.92@gmail.com', 'ciao@hotmail.it']
+30-12-2021 12:12:26.306 INFO mail - send_mail: sender_email: btmercati@gmail.com - receiver_email: ['luca.benzi.92@gmail.com', 'ciao@hotmail.it'] 
+30-12-2021 12:12:26.605 INFO mail - send_mail_ssl: login into mail account
+30-12-2021 12:12:26.962 INFO mail - send_mail_ssl: login OK
+30-12-2021 12:12:26.962 INFO mail - send_mail_ssl: sending mail
+30-12-2021 12:12:27.941 INFO mail - send_mail_ssl: mail sent with the following message: Content-Type: multipart/alternative; boundary="===============4837582870919576357=="
+MIME-Version: 1.0
+Subject: INVESTITORI IPO
+From: btmercati@gmail.com
+To: luca.benzi.92@gmail.com, ciao@hotmail.it
+
+--===============4837582870919576357==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+CjxodG1sPgogICAgPGhlYWQ+CiAgICAgICAgPG1ldGEgaHR0cC1lcXVp
+dj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWwgY2hhcnNldD1VVEYtOCIgLz4KICAg
+ICAgICA8c3R5bGU+CiAgICAgICAgCiNjdXN0b21lcnMgewogIGZvbnQtZmFtaWx5OiBBcmlhbCwg
+SGVsdmV0aWNhLCBzYW5zLXNlcmlmOwogIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7CiAgd2lk
+dGg6IDEwMCU7Cn0KCiNjdXN0b21lcnMgdGQsICNjdXN0b21lcnMgdGggewogIGJvcmRlcjogMXB4
+IHNvbGlkICNkZGQ7CiAgcGFkZGluZzogOHB4Owp9CgojY3VzdG9tZXJzIHRyOm50aC1jaGlsZChl
+dmVuKXtiYWNrZ3JvdW5kLWNvbG9yOiAjZjJmMmYyO30KCiNjdXN0b21lcnMgdHI6aG92ZXIge2Jh
+Y2tncm91bmQtY29sb3I6ICNkZGQ7fQoKI2N1c3RvbWVycyB0aCB7CiAgcGFkZGluZy10b3A6IDEy
+cHg7CiAgcGFkZGluZy1ib3R0b206IDEycHg7CiAgdGV4dC1hbGlnbjogbGVmdDsKICBiYWNrZ3Jv
+dW5kLWNvbG9yOiAjMDRBQTZEOwogIGNvbG9yOiB3aGl0ZTsKfQouRXh0ZXJuYWxDbGFzcyB7d2lk
+dGg6IDEwMCU7fQoKICAgICAgICA8L3N0eWxlPgogICAgPC9oZWFkPgogICAgPGJvZHk+CiAgICA8
+ZGl2PgogICAgPHRhYmxlIGJvcmRlcj0iMSIgY2xhc3M9ImRhdGFmcmFtZSIgaWQ9ImN1c3RvbWVy
+cyI+CiAgPHRoZWFkPgogICAgPHRyIHN0eWxlPSJ0ZXh0LWFsaWduOiByaWdodDsiPgogICAgICA8
+dGg+PC90aD4KICAgICAgPHRoPlRpY2tlcjwvdGg+CiAgICAgIDx0aD5Db21wYW55IE5hbWU8L3Ro
+PgogICAgICA8dGg+SW52ZXN0b3IgUHJpY2U8L3RoPgogICAgICA8dGg+Q3VycmVudCBQcmljZTwv
+dGg+CiAgICAgIDx0aD5JbnZlc3RvcjwvdGg+CiAgICAgIDx0aD5BY3Rpb248L3RoPgogICAgPC90
+cj4KICA8L3RoZWFkPgogIDx0Ym9keT4KICAgIDx0cj4KICAgICAgPHRoPjA8L3RoPgogICAgICA8
+dGQ+QU1QUzwvdGQ+CiAgICAgIDx0ZD5BbHR1cyBQb3dlciBJbmMgLSBDbGFzcyBBPC90ZD4KICAg
+ICAgPHRkPiQxMC43NTwvdGQ+CiAgICAgIDx0ZD4kMTAuMTA8L3RkPgogICAgICA8dGQ+SmVmZnJl
+eSBVYmJlbjwvdGQ+CiAgICAgIDx0ZD5OZXcgaG9sZGluZzwvdGQ+CiAgICA8L3RyPgogICAgPHRy
+PgogICAgICA8dGg+MTwvdGg+CiAgICAgIDx0ZD5IR1RZPC90ZD4KICAgICAgPHRkPkhhZ2VydHkg
+SW5jIC0gQ2xhc3MgQTwvdGQ+CiAgICAgIDx0ZD4tPC90ZD4KICAgICAgPHRkPiQxNC45MjwvdGQ+
+CiAgICAgIDx0ZD5Ub20gR2F5bmVyPC90ZD4KICAgICAgPHRkPk5ldyBob2xkaW5nPC90ZD4KICAg
+IDwvdHI+CiAgPC90Ym9keT4KPC90YWJsZT4KICAgIDwvZGl2PgogICAgPGRpdj4KICAgICAgICA8
+L2JyPjwvYnI+CiAgICAgICAgPHAgYWxpZ249ImNlbnRlciIgc3R5bGU9ImNvbG9yOiAjNzc3OyBs
+aW5lLWhlaWdodDogNnB4OyBmb250LXNpemU6IDc1JSI+UmljZXZpIHF1ZXN0YSBtYWlsIHBlcmNo
+w4PCqSBpc2NyaXR0byBhIEJUTUVSQ0FUSTxwPgogICAgICAgIDxwIGFsaWduPSJjZW50ZXIiIHN0
+eWxlPSJjb2xvcjogIzc3NzsgbGluZS1oZWlnaHQ6IDBlbTsgZm9udC1zaXplOiA3NSUiPjxhIGhy
+ZWY9IiMiIHN0eWxlPSJjb2xvcjogIzc3NyI+Q2xpY2NhIHF1aTwvYT4gcGVyIGRpc2lzY3JpdmVy
+dGk8cD4KICAgIDwvZGl2PgogICAgPC9ib2R5Pgo8L2h0bWw+Cg==
+
+--===============4837582870919576357==--
+
+30-12-2021 12:12:27.984 INFO main_test - <module>: -----------------PGM-ENDED---------------------
+
+
+30-12-2021 12:15:55.120 INFO main_test - <module>: -----------------PGM-STARTED---------------------
+30-12-2021 12:15:55.120 INFO main_test - IPO_Fillant: Getting data from web...
+30-12-2021 12:15:56.479 INFO scraper - get_data: There are 15 transactions on the website
+30-12-2021 12:15:56.479 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:15:56.639 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LSXMA.png...
+30-12-2021 12:15:56.800 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/IEP.png...
+30-12-2021 12:15:57.008 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:15:57.167 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:15:57.318 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/AMPS.png...
+30-12-2021 12:15:57.609 INFO scraper - get_data: Found new company ('AMPS', 'Altus Power Inc - Class A', '$10.75', '$10.10', 'Jeffrey Ubben', 'New holding')
+30-12-2021 12:15:57.609 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:15:57.902 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HGTY.png...
+30-12-2021 12:15:58.176 INFO scraper - get_data: Found new company ('HGTY', 'Hagerty Inc - Class A', '-', '$14.92', 'Tom Gayner', 'New holding')
+30-12-2021 12:15:58.176 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:15:58.452 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:15:58.727 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/VST.png...
+30-12-2021 12:15:58.882 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:15:59.168 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LKQ.png...
+30-12-2021 12:15:59.335 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HRI.png...
+30-12-2021 12:15:59.486 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/WEAV.png...
+30-12-2021 12:15:59.768 INFO scraper - get_data: Found new company ('WEAV', 'Weave Communications Inc', '$21.13', '$14.33', 'Tiger Global', 'New holding')
+30-12-2021 12:15:59.769 INFO main_test - IPO_Fillant: checking new companies...
+30-12-2021 12:15:59.777 INFO mail - check_new_companies: old companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $1a.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+30-12-2021 12:15:59.781 INFO mail - check_new_companies: new companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $10.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+2   WEAV   Weave Communications Inc         $21.13   Tiger Global  New holding
+30-12-2021 12:15:59.782 INFO mail - check_new_companies: found new companies
+30-12-2021 12:15:59.782 INFO main_test - IPO_Fillant: sending mail...
+30-12-2021 12:15:59.782 INFO mail - get_receivers_address: receivers: ['luca.benzi.92@gmail.com', 'ciao@hotmail.it']
+30-12-2021 12:15:59.782 INFO mail - send_mail: sender_email: btmercati@gmail.com - receiver_email: ['luca.benzi.92@gmail.com', 'ciao@hotmail.it'] 
+30-12-2021 12:15:59.961 INFO mail - send_mail_ssl: login into mail account
+30-12-2021 12:16:00.277 INFO mail - send_mail_ssl: login OK
+30-12-2021 12:16:00.277 INFO mail - send_mail_ssl: sending mail
+30-12-2021 12:16:01.034 INFO mail - send_mail_ssl: mail sent with the following message: 
+Content-Type: multipart/alternative; boundary="===============3115352481044619087=="
+MIME-Version: 1.0
+Subject: INVESTITORI IPO
+From: btmercati@gmail.com
+To: luca.benzi.92@gmail.com, ciao@hotmail.it
+
+--===============3115352481044619087==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+CjxodG1sPgogICAgPGhlYWQ+CiAgICAgICAgPG1ldGEgaHR0cC1lcXVp
+dj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWwgY2hhcnNldD1VVEYtOCIgLz4KICAg
+ICAgICA8c3R5bGU+CiAgICAgICAgCiNjdXN0b21lcnMgewogIGZvbnQtZmFtaWx5OiBBcmlhbCwg
+SGVsdmV0aWNhLCBzYW5zLXNlcmlmOwogIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7CiAgd2lk
+dGg6IDEwMCU7Cn0KCiNjdXN0b21lcnMgdGQsICNjdXN0b21lcnMgdGggewogIGJvcmRlcjogMXB4
+IHNvbGlkICNkZGQ7CiAgcGFkZGluZzogOHB4Owp9CgojY3VzdG9tZXJzIHRyOm50aC1jaGlsZChl
+dmVuKXtiYWNrZ3JvdW5kLWNvbG9yOiAjZjJmMmYyO30KCiNjdXN0b21lcnMgdHI6aG92ZXIge2Jh
+Y2tncm91bmQtY29sb3I6ICNkZGQ7fQoKI2N1c3RvbWVycyB0aCB7CiAgcGFkZGluZy10b3A6IDEy
+cHg7CiAgcGFkZGluZy1ib3R0b206IDEycHg7CiAgdGV4dC1hbGlnbjogbGVmdDsKICBiYWNrZ3Jv
+dW5kLWNvbG9yOiAjMDRBQTZEOwogIGNvbG9yOiB3aGl0ZTsKfQouRXh0ZXJuYWxDbGFzcyB7d2lk
+dGg6IDEwMCU7fQoKICAgICAgICA8L3N0eWxlPgogICAgPC9oZWFkPgogICAgPGJvZHk+CiAgICA8
+ZGl2PgogICAgPHRhYmxlIGJvcmRlcj0iMSIgY2xhc3M9ImRhdGFmcmFtZSIgaWQ9ImN1c3RvbWVy
+cyI+CiAgPHRoZWFkPgogICAgPHRyIHN0eWxlPSJ0ZXh0LWFsaWduOiByaWdodDsiPgogICAgICA8
+dGg+PC90aD4KICAgICAgPHRoPlRpY2tlcjwvdGg+CiAgICAgIDx0aD5Db21wYW55IE5hbWU8L3Ro
+PgogICAgICA8dGg+SW52ZXN0b3IgUHJpY2U8L3RoPgogICAgICA8dGg+Q3VycmVudCBQcmljZTwv
+dGg+CiAgICAgIDx0aD5JbnZlc3RvcjwvdGg+CiAgICAgIDx0aD5BY3Rpb248L3RoPgogICAgPC90
+cj4KICA8L3RoZWFkPgogIDx0Ym9keT4KICAgIDx0cj4KICAgICAgPHRoPjA8L3RoPgogICAgICA8
+dGQ+QU1QUzwvdGQ+CiAgICAgIDx0ZD5BbHR1cyBQb3dlciBJbmMgLSBDbGFzcyBBPC90ZD4KICAg
+ICAgPHRkPiQxMC43NTwvdGQ+CiAgICAgIDx0ZD4kMTAuMTA8L3RkPgogICAgICA8dGQ+SmVmZnJl
+eSBVYmJlbjwvdGQ+CiAgICAgIDx0ZD5OZXcgaG9sZGluZzwvdGQ+CiAgICA8L3RyPgogICAgPHRy
+PgogICAgICA8dGg+MTwvdGg+CiAgICAgIDx0ZD5IR1RZPC90ZD4KICAgICAgPHRkPkhhZ2VydHkg
+SW5jIC0gQ2xhc3MgQTwvdGQ+CiAgICAgIDx0ZD4tPC90ZD4KICAgICAgPHRkPiQxNC45MjwvdGQ+
+CiAgICAgIDx0ZD5Ub20gR2F5bmVyPC90ZD4KICAgICAgPHRkPk5ldyBob2xkaW5nPC90ZD4KICAg
+IDwvdHI+CiAgICA8dHI+CiAgICAgIDx0aD4yPC90aD4KICAgICAgPHRkPldFQVY8L3RkPgogICAg
+ICA8dGQ+V2VhdmUgQ29tbXVuaWNhdGlvbnMgSW5jPC90ZD4KICAgICAgPHRkPiQyMS4xMzwvdGQ+
+CiAgICAgIDx0ZD4kMTQuMzM8L3RkPgogICAgICA8dGQ+VGlnZXIgR2xvYmFsPC90ZD4KICAgICAg
+PHRkPk5ldyBob2xkaW5nPC90ZD4KICAgIDwvdHI+CiAgPC90Ym9keT4KPC90YWJsZT4KICAgIDwv
+ZGl2PgogICAgPGRpdj4KICAgICAgICA8L2JyPjwvYnI+CiAgICAgICAgPHAgYWxpZ249ImNlbnRl
+ciIgc3R5bGU9ImNvbG9yOiAjNzc3OyBsaW5lLWhlaWdodDogNnB4OyBmb250LXNpemU6IDc1JSI+
+UmljZXZpIHF1ZXN0YSBtYWlsIHBlcmNow4PCqSBpc2NyaXR0byBhIEJUTUVSQ0FUSTxwPgogICAg
+ICAgIDxwIGFsaWduPSJjZW50ZXIiIHN0eWxlPSJjb2xvcjogIzc3NzsgbGluZS1oZWlnaHQ6IDBl
+bTsgZm9udC1zaXplOiA3NSUiPjxhIGhyZWY9IiMiIHN0eWxlPSJjb2xvcjogIzc3NyI+Q2xpY2Nh
+IHF1aTwvYT4gcGVyIGRpc2lzY3JpdmVydGk8cD4KICAgIDwvZGl2PgogICAgPC9ib2R5Pgo8L2h0
+bWw+Cg==
+
+--===============3115352481044619087==--
+
+30-12-2021 12:16:01.089 INFO main_test - <module>: -----------------PGM-ENDED---------------------
+
+
+30-12-2021 12:30:31.531 INFO main_test - <module>: -----------------PGM-STARTED---------------------
+30-12-2021 12:30:31.531 INFO main_test - IPO_Fillant: Getting data from web...
+30-12-2021 12:30:32.686 INFO scraper - get_data: There are 15 transactions on the website
+30-12-2021 12:30:32.687 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:30:33.023 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LSXMA.png...
+30-12-2021 12:30:33.300 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:30:33.460 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/IEP.png...
+30-12-2021 12:30:33.766 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/CCAP.png...
+30-12-2021 12:30:33.921 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/AMPS.png...
+30-12-2021 12:30:34.236 INFO scraper - get_data: Found new company ('AMPS', 'Altus Power Inc - Class A', '$10.75', '$10.10', 'Jeffrey Ubben', 'New holding')
+30-12-2021 12:30:34.236 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:30:34.519 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HGTY.png...
+30-12-2021 12:30:34.782 INFO scraper - get_data: Found new company ('HGTY', 'Hagerty Inc - Class A', '-', '$14.92', 'Tom Gayner', 'New holding')
+30-12-2021 12:30:34.783 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:30:35.060 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:30:35.332 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:30:35.613 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/VST.png...
+30-12-2021 12:30:35.890 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/LKQ.png...
+30-12-2021 12:30:36.180 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/HRI.png...
+30-12-2021 12:30:36.572 INFO scraper - isIPO: Checking picture: https://storage.googleapis.com/iex/api/logos/UPST.png...
+30-12-2021 12:30:36.851 INFO main_test - IPO_Fillant: checking new companies...
+30-12-2021 12:30:36.873 INFO mail - check_new_companies: old companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $1a.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+2   WEAV   Weave Communications Inc         $21.13   Tiger Global  New holding
+30-12-2021 12:30:36.877 INFO mail - check_new_companies: new companies: 
+  Ticker               Company Name Investor Price       Investor       Action
+0   AMPS  Altus Power Inc - Class A         $10.75  Jeffrey Ubben  New holding
+1   HGTY      Hagerty Inc - Class A              -     Tom Gayner  New holding
+30-12-2021 12:30:36.877 INFO mail - check_new_companies: found new companies
+30-12-2021 12:30:36.877 INFO main_test - IPO_Fillant: sending mail...
+30-12-2021 12:30:36.878 INFO mail - get_receivers_address: receivers: ['luca.benzi.92@gmail.com', 'ciao@hotmail.it']
+30-12-2021 12:30:36.878 INFO mail - send_mail: sender_email: btmercati@gmail.com - receiver_email: ['luca.benzi.92@gmail.com', 'ciao@hotmail.it'] 
+30-12-2021 12:30:37.110 INFO mail - send_mail_ssl: login into mail account
+30-12-2021 12:30:37.414 INFO mail - send_mail_ssl: login OK
+30-12-2021 12:30:37.414 INFO mail - send_mail_ssl: sending mail
+30-12-2021 12:30:38.324 INFO mail - send_mail_ssl: mail sent with the following message: 
+Content-Type: multipart/alternative; boundary="===============6253699571092902553=="
+MIME-Version: 1.0
+Subject: INVESTITORI IPO
+From: btmercati@gmail.com
+To: luca.benzi.92@gmail.com, ciao@hotmail.it
+
+--===============6253699571092902553==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+        <style>
+        
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+.ExternalClass {width: 100%;}
+
+        </style>
+    </head>
+    <body>
+    <div>
+    <table border="1" class="dataframe" id="customers">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Ticker</th>
+      <th>Company Name</th>
+      <th>Investor Price</th>
+      <th>Current Price</th>
+      <th>Investor</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AMPS</td>
+      <td>Altus Power Inc - Class A</td>
+      <td>$10.75</td>
+      <td>$10.10</td>
+      <td>Jeffrey Ubben</td>
+      <td>New holding</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>HGTY</td>
+      <td>Hagerty Inc - Class A</td>
+      <td>-</td>
+      <td>$14.92</td>
+      <td>Tom Gayner</td>
+      <td>New holding</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div>
+        </br></br>
+        <p align="center" style="color: #777; line-height: 6px; font-size: 75%">Ricevi questa mail perche' iscritto a BTMERCATI<p>
+        <p align="center" style="color: #777; line-height: 0em; font-size: 75%"><a href="#" style="color: #777">Clicca qui</a> per disiscriverti<p>
+    </div>
+    </body>
+</html>
+
+--===============6253699571092902553==--
+
+30-12-2021 12:30:38.369 INFO main_test - <module>: -----------------PGM-ENDED---------------------
+
+

@@ -17,7 +17,7 @@ def check_new_companies(data):
     df.to_csv("companies.csv", index=False)
     logger.info(f"old companies: \n{old_companies}")
     logger.info(f"new companies: \n{df}")
-    if not df.equals(old_companies):
+    if not df.iloc[0].equals(old_companies.iloc[0]):
         logger.info(f"found new companies")
         return True
     else:
@@ -49,6 +49,7 @@ def create_message(sender_email, receiver_email, data):
     message["Subject"] = "INVESTITORI IPO"
     message["From"] = sender_email
     message["To"] = ", ".join(receiver_email)
+    #todo: gestire l'ìnsieme dei caratteri in modo che si possano usare le lettere accentate nella mail.
 
     html = get_mail_html()
     css = get_table_style()
@@ -61,6 +62,7 @@ def create_message(sender_email, receiver_email, data):
     # html = '<!DOCTYPE html>\n' + html + '\n</html>'
     body = MIMEText(html, "html")
     message.attach(body)
+
     return message
 
 
@@ -82,7 +84,7 @@ def send_mail_ssl(message, password):
         try:
             logger.info(f"sending mail")
             server.sendmail(message["From"], message["To"].split(","), message.as_string())
-            logger.info(f"mail sent with the following message: {message.as_string()}")
+            logger.info(f"mail sent with the following message: \n{message.as_string()}")
         except Exception as e:
             logger.error(e, exc_info=True)
 
