@@ -17,11 +17,14 @@ def check_new_companies(data):
     df.to_csv("companies.csv", index=False)
     logger.info(f"old companies: \n{old_companies}")
     logger.info(f"new companies: \n{df}")
-    if not df.iloc[0].equals(old_companies.iloc[0]):
-        logger.info(f"found new companies")
-        return True
+    if len(df) is not 0:    # Se non ci sono aziende nella lista ritorna zero, altrimenti guarda la prima riga
+        if not df.iloc[0].equals(old_companies.iloc[0]):
+            logger.info(f"found new companies")
+            return True
+        else:
+            logger.info(f"no companies")
+            return False
     else:
-        logger.info(f"no companies")
         return False
 
 
