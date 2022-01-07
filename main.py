@@ -17,7 +17,7 @@ def IPO_Fillant():
         logger.info(f"-----------------PGM-ENDED---------------------\n\n")
     except Exception as e:
         logger.error(e, exc_info=True)
-        raise e
+        # raise e   # interrompe esecuzione del programma
 
 
 if __name__ == '__main__':
